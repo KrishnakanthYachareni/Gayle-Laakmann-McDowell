@@ -26,6 +26,7 @@ import java.util.TreeMap;
  * Example:
  * Input : "AABC"
  * Output: [A, AA, AAB, AABC, AAC, AB, ABC, AC, B, BC, C]
+ * @implNote https://www.youtube.com/watch?v=xTNFs5KRV_g&t=835s
  */
 public class StringCombination {
     public static void main(String[] args) {

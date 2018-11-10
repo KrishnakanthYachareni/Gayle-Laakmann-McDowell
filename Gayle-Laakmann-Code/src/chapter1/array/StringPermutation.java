@@ -27,6 +27,7 @@ import java.util.TreeMap;
  * Input : "AABC"
  * The Number of permutations = 4!/2! * 1! * 1! = 12
  * Output: [AABC, AACB, ABAC, ABCA, ACAB, ACBA, BAAC, BACA, BCAA, CAAB, CABA, CBAA]
+ * @implNote https://www.youtube.com/watch?v=nYFd7VHKyWQ
  */
 public class StringPermutation {
     public static void main(String[] args) {
