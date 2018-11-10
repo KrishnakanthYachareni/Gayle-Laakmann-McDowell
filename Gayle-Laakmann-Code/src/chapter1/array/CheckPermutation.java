@@ -27,6 +27,6 @@ public class CheckPermutation {
     }
 
     private static void permutations(String str, List<String> list) {
-        
+
     }
 }
