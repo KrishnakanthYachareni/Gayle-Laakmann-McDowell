@@ -1,4 +1,4 @@
-package chapter1.array;
+package chapter1.string;
 
 /**
  * @author Krishnakanth Yachareni

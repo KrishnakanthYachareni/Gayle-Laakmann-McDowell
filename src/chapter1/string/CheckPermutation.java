@@ -2,7 +2,7 @@
  * Copyright (c) 2018. All rights Reserved By Krishnakanth Yachareni
  */
 
-package chapter1.array;
+package chapter1.string;
 
 import java.util.List;
 

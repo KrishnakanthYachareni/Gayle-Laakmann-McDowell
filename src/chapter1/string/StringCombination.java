@@ -2,7 +2,7 @@
  * Copyright (c) 2018. All rights Reserved By Krishnakanth Yachareni
  */
 
-package chapter1.array;
+package chapter1.string;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -72,7 +72,7 @@ public class StringCombination {
     }
 
     private static void combinationUtil(char[] str, int[] count, char[] result, int pos, int level, List<String> resultList) {
-        // First time result[0] is null to avoid to insert that into array lit this condition has made.
+        // First time result[0] is null to avoid to insert that into string lit this condition has made.
         // '\u0000' is the default value for a character. Its decimal equivalent is 0.
         if (result[0] != '\u0000') {
             resultList.add(new String(result, 0, level));
