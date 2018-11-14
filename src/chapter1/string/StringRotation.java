@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2018 MasterCard. All rights reserved.
+ * Copyright (c) 2018 Krishnakanth Yachareni. All rights reserved.
  */
 
 package chapter1.string;
