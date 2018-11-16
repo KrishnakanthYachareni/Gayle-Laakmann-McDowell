@@ -1,8 +1,8 @@
 /*
- * Copyright (c) 2018 Krishnakanth Yachareni. All rights reserved.
+ * Copyright (c) 2018 MasterCard. All rights reserved.
  */
 
-package chapter2.linkedList;
+package chapter2.linkedList.impl;
 
 /**
  * @author Krishnakanth Yachareni
