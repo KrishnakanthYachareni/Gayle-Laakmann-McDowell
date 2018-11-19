@@ -4,57 +4,28 @@
 
 package chapter2.linkedList;
 
+import chapter2.linkedList.common.LinkedList;
+import chapter2.linkedList.common.Node;
+
 import java.util.HashSet;
 import java.util.Set;
 
-class Node {
-    Node next;
-    String data;
-
-    Node(String data) {
-        this.data = data;
-        next = null;
-    }
-
-    public Node getNext() {
-        return next;
-    }
-
-    public void setNext(Node next) {
-        this.next = next;
-    }
-}
-
-class LinkedList {
-    static int size;
-    Node head;
-
-    public int getSize() {
-        return size;
-    }
-
-    public void add(String data) {
-        if (head == null) {
-            head = new Node(data);
-        } else {
-            Node newNode = new Node(data);
-            Node currentNode = head;
-            while (currentNode.next != null) {
-                currentNode = currentNode.next;
-            }
-            currentNode.setNext(newNode);
-        }
-        size++;
-    }
-
-    public void removeDuplicates() {
+public class RemoveDuplicate {
+    /**
+     * @author Krishnakanth Yachareni
+     * @since 19-11-2018
+     * <p>
+     * Remove the duplicate elements from the LinkedList.
+     * Solution is to first find the duplicates then remove for this I have used HashSet
+     */
+    public static void removeDuplicates() {
         Set<String> set = new HashSet<>();
-        Node currentNode = head;
+        Node currentNode = LinkedList.head;
         Node prev = null;
         while (currentNode != null) {
             if (set.contains(currentNode.data)) {
-                prev.setNext(currentNode.getNext());
-                size--;
+                prev.next = currentNode.next;
+                LinkedList.size--;
             } else {
                 set.add(currentNode.data);
                 prev = currentNode;
@@ -63,33 +34,19 @@ class LinkedList {
         }
     }
 
-    @Override
-    public String toString() {
-        String output = "[";
-        if (head != null) {
-            Node current = head;
-            while (current != null) {
-                output += current.data + ",";
-                current = current.getNext();
-            }
-        }
-        return output.substring(0, output.lastIndexOf(",")) + "]";
-    }
-}
-
-public class RemoveDuplicate {
     public static void main(String[] args) {
         LinkedList linkedList = new LinkedList();
         linkedList.add("a");
         linkedList.add("b");
-        linkedList.add("b");
+        linkedList.add("d");
         linkedList.add("c");
         linkedList.add("b");
+        linkedList.add("h");
         System.out.println(linkedList);
-        System.out.println(linkedList.getSize());
+        System.out.println("Size: " + linkedList.getSize());
         // After removing the duplicates.
-        linkedList.removeDuplicates();
+        removeDuplicates();
         System.out.println(linkedList);
-        System.out.println(linkedList.getSize());
+        System.out.println("Size: " + linkedList.getSize());
     }
 }
