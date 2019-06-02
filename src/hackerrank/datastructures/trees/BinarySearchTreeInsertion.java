@@ -31,24 +31,6 @@ class BinarySearchTreeInsertion {
         preOrder(root.right);
     }
 
-    public static int height(Node root) {
-        // Write your code here.
-        Node left = root, right = root;
-        int leftCount = 0, rightCount = 0;
-        while(null != left) {
-            if(left.left != null)
-                leftCount++;
-            left = left.left;
-        }
-
-        while(null != right) {
-            if(right.right != null)
-                rightCount++;
-            right = right.right;
-        }
-        return Math.max(leftCount, rightCount);
-    }
-
     // Complete the function for inserting the elements in BST
     public static Node insert(Node root, int data) {
         if (null == root) {
@@ -78,7 +60,6 @@ class BinarySearchTreeInsertion {
             root = insert(root, data);
         }
         scan.close();
-//        preOrder(root);
-        System.out.println(height(root));
+        preOrder(root);
     }
 }
