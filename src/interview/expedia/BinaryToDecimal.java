@@ -2,16 +2,7 @@
  * Copyright (c) 2019. All rights Reserved By Krishnakanth Yachareni
  */
 
-package interview;
-
-class SinglyLinkedListNode {
-    int data;
-    SinglyLinkedListNode next;
-
-    SinglyLinkedListNode(int data) {
-        this.data = data;
-    }
-}
+package interview.expedia;
 
 public class BinaryToDecimal {
 

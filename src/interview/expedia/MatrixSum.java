@@ -2,7 +2,7 @@
  * Copyright (c) 2019. All rights Reserved By Krishnakanth Yachareni
  */
 
-package interview;
+package interview.expedia;
 
 import java.util.ArrayList;
 import java.util.Arrays;
