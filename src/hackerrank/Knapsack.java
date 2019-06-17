@@ -1,49 +1,28 @@
+/*
+ * Copyright (c) 2019. All rights Reserved By Krishnakanth Yachareni
+ */
+
 package hackerrank;
 
-import java.util.Scanner;
-
-class Knapsack {
-
+public class Knapsack {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int numberOfTests = sc.nextInt();
-        for (int i = 0; i <= numberOfTests; i++) {
-            int capacity = sc.nextInt();
-            int noOfItems = sc.nextInt();
-            int[] weights = readItems(sc, noOfItems);
-            int[] values = readItems(sc, noOfItems);
-            System.out.println(computeMaxValue(values, weights, capacity));
-        }
+        int val[] = new int[]{60, 100, 120};
+        int wt[] = new int[]{10, 20, 30};
+        int capacity = 50;
+        System.out.println(knapsack(capacity, wt, val, 3));
     }
 
-    public static int computeMaxValue(int[] values, int[] weights, int capacity) {
-        int n = weights.length;
-        int[][] tempVal = new int[n + 1][capacity + 1];
-        for (int col = 0; col <= capacity; col++) {
-            tempVal[0][col] = 0;
+    private static int knapsack(int capacity, int[] weights, int[] values, int totalItems) {
+        if (0 == capacity || 0 == totalItems) {
+            return 0;
         }
-        for (int row = 0; row <= n; row++) {
-            tempVal[row][0] = 0;
+        if (weights[totalItems - 1] > capacity) {
+            return knapsack(capacity, weights, values, totalItems - 1);
         }
-        for (int item = 1; item <= n; item++) {
-            for (int weight = 1; weight <= capacity; weight++) {
-                if (weights[item - 1] <= weight) {
-                    tempVal[item][weight] =
-                            Math.max(values[item - 1] + tempVal[item - 1][weight - weights[item - 1]],
-                                    tempVal[item - 1][weight]);
-                } else {
-                    tempVal[item][weight] = tempVal[item - 1][weight];
-                }
-            }
-        }
-        return tempVal[n][capacity];
+        return max(values[totalItems - 1] + knapsack(capacity - weights[totalItems - 1], weights, values, totalItems - 1), knapsack(capacity, weights, values, totalItems - 1));
     }
 
-    private static int[] readItems(Scanner sc, int noOfItems) {
-        int[] ar = new int[noOfItems];
-        for (int j = 0; j < noOfItems; j++) {
-            ar[j] = sc.nextInt();
-        }
-        return ar;
+    private static int max(int a, int b) {
+        return -1;
     }
 }
