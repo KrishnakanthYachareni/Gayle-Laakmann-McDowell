@@ -1,0 +1,27 @@
+def play(arr):
+    jerryPoints = 0
+    tomPoints = 0
+    columns = len(arr[0])
+    numberOfValuesInColumns = []
+    for c in range(columns):
+        col = [row[c] for row in arr]
+        numberOfValuesInColumns.append(max(col))
+    tomShift = True
+    numberOfValuesInColumns.sort(reverse=True)
+    for i in range(len(numberOfValuesInColumns)):
+        if tomShift == True:
+            tomPoints += numberOfValuesInColumns[i]
+            tomShift = False
+        else:
+            jerryPoints += numberOfValuesInColumns[i]
+            tomShift = True
+    return tomPoints - jerryPoints
+
+
+board = [[5, 7, 6, 2, 8, 4, 4, 8],
+         [2, 5, 4, 5, 9, 8, 4, 2],
+         [5, 4, 3, 9, 8, 3, 3, 4],
+         [4, 9, 3, 4, 6, 7, 4, 9],
+         [2, 4, 6, 2, 9, 2, 4, 2]]
+
+play(board)
