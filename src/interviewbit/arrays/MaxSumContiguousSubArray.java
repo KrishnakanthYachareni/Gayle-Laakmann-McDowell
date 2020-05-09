@@ -2,7 +2,7 @@
  * Copyright (c) 2018. All rights Reserved By Krishnakanth Yachareni
  */
 
-package interviewbit;
+package interviewbit.arrays;
 
 import java.util.Arrays;
 import java.util.List;
