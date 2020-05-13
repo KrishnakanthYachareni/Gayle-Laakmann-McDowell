@@ -14,30 +14,28 @@ import java.util.Arrays;
  * @link https://www.hackerrank.com/contests/smart-interviews/challenges/si-pair
  *       -with-difference-k
  *       <p>
- *       Solution: Complexity:
+ *       Solution: Complexity:O(nlogn)
  */
 public final class PairWithDiffK {
 	public static void main(String[] args) {
-		int[] arr = { 12, 45, 52, 65, 21, 645, 234, 14, 575, 112 };
+		int[] arr = { 1, 20, 40, 100, 80 };
 		Arrays.sort(arr);
-		boolean b = hasDiffPair(arr, 11);
+		boolean b = hasDiffPair(arr, 60);
 		System.out.println(b);
 	}
 
-	// TODO: Incomplete solution
 	private static boolean hasDiffPair(int[] arr, int k) {
-		int p1 = 0, p2 = arr.length - 1;
-		while (p1 < arr.length && p2 >= 0) {
-			int diff = Math.abs(arr[p2] - arr[p1]);
-			if (diff == k) {
+		int p1 = 0, p2 = 0;
+		while (p1 < arr.length && p2 < arr.length) {
+			int diff = arr[p2] - arr[p1];
+			if (diff == k && p1 != p2) {
 				return true;
-			} else if (diff > k) {
-				p1++;
+			} else if (diff < k) {
+				p2++;
 			} else {
-				p2--;
+				p1++;
 			}
 		}
 		return false;
 	}
-
 }

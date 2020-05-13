@@ -19,9 +19,23 @@ import java.util.Arrays;
  */
 public final class MaxContiguousSubSequence {
 	public static void main(String[] args) {
-		int[] arr = { -4, 0, 10, -7 };
-		Arrays.sort(arr);
-		// TODO:
+		int[] arr = { 1, 1 };
+		int ans = maxSubArrayLen(arr);
+		System.out.println(ans);
 	}
 
+	private static int maxSubArrayLen(int[] arr) {
+		Arrays.sort(arr);
+		int maxLen = 1;
+		int currentLen = maxLen;
+		for (int i = 0; i < arr.length - 1; i++) {
+			if (arr[i + 1] - arr[i] == 1) {
+				currentLen++;
+			} else if (arr[i + 1] != arr[i]) {
+				currentLen = 1;
+			}
+			maxLen = Math.max(maxLen, currentLen);
+		}
+		return maxLen;
+	}
 }
