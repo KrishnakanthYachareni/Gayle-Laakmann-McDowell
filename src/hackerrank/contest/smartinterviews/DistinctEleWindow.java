@@ -29,9 +29,8 @@ public final class DistinctEleWindow {
 
 	protected static void distinctElements(int[] ar, int n, int k) {
 		Map<Integer, Integer> map = new HashMap<>();
-		int kthEnd = 0;
+		int kthEnd = k;
 		for (int i = 0; i < k; i++) {
-			kthEnd = i;
 			map.compute(ar[i], (key, value) -> {
 				if (map.containsKey(key)) {
 					return value + 1;
@@ -41,7 +40,6 @@ public final class DistinctEleWindow {
 			});
 		}
 		int p1 = 0;
-		kthEnd += 1;
 		while (p1 < n && kthEnd <= n) {
 			System.out.print(map.size() + " ");
 			int va = map.get(ar[p1]);
