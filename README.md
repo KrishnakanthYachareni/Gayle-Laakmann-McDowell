@@ -17,6 +17,13 @@
 - [Contests](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/contest)
 ### DataStructures | Challenges: TODO
 - [Trees](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/datastructures/trees)
+## InterviewBit | Challenges: TODO | Points: TODO | Rank: TODO
+- [Arrays](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/arrays)
+- [Binary Search](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/binarysearch)
+- [Hashing](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/hashing)
+- [Math](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/maths)
+- [String](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/string)
+- [Two Pointer](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/twopointer)
 ## CodeChef | Challenges: TODO | Points: TODO | Rank: TODO
 ### Algorithms | Challenges: TODO
 - [Easy](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codechef/easy)
@@ -27,14 +34,6 @@
 
 ## Spoj | Challenges: TODO | Points: TODO | Rank: TODO
 - [Classical](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/spoj/classical)
-
-## InterviewBit | Challenges: TODO | Points: TODO | Rank: TODO
-- [Arrays](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/arrays)
-- [Binary Search](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/binarysearch)
-- [Hashing](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/hashing)
-- [Math](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/maths)
-- [String](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/string)
-- [Two Pointer](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/twopointer)
 
 ## Cracking the coding Interview (Gayle Laakmann McDowell)
 ### Algorithms
