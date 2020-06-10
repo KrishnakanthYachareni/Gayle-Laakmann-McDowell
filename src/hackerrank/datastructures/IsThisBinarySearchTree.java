@@ -1,12 +1,12 @@
 /*
- * Copyright (c) 2019. All rights Reserved By Krishnakanth Yachareni
+ * Copyright (c) 2020. All rights Reserved By Krishnakanth Yachareni
  */
 
-package hackerrank.datastructures.trees;
+package hackerrank.datastructures;
 
 import java.util.Scanner;
 
-import static hackerrank.datastructures.trees.BinarySearchTreeInsertion.insert;
+import static hackerrank.datastructures.BinarySearchTreeInsertion.insert;
 
 /**
  * https://www.hackerrank.com/challenges/is-binary-search-tree/problem

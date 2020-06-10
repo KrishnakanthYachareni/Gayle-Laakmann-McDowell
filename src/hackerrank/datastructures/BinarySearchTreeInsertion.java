@@ -1,8 +1,8 @@
 /*
- * Copyright (c) 2019. All rights Reserved By Krishnakanth Yachareni
+ * Copyright (c) 2020. All rights Reserved By Krishnakanth Yachareni
  */
 
-package hackerrank.datastructures.trees;
+package hackerrank.datastructures;
 
 import java.util.Scanner;
 

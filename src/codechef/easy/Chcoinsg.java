@@ -1,3 +1,7 @@
+/*
+ * Copyright (c) 2020. All rights Reserved By Krishnakanth Yachareni
+ */
+
 package codechef.easy;
 
 import java.io.IOException;
