@@ -1,4 +1,4 @@
-package codeforces.ratingless1300;
+package codeforces.problemset;
 
 import java.util.Scanner;
 
