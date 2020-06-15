@@ -37,21 +37,21 @@ public class MergeTwoSortedList {
         Node td = d;
         while (h1 != null && h2 != null) {
             if (h1.data < h2.data) {
-                d.next = new Node(h1.data);
+                d.next = h1;
                 h1 = h1.next;
             } else {
-                d.next = new Node(h2.data);
+                d.next = h2;
                 h2 = h2.next;
             }
             d = d.next;
         }
         while (h1 != null) {
-            d.next = new Node(h1.data);
+            d.next = h1;
             h1 = h1.next;
             d = d.next;
         }
         while (h2 != null) {
-            d.next = new Node(h2.data);
+            d.next = h2;
             h2 = h2.next;
             d = d.next;
         }
