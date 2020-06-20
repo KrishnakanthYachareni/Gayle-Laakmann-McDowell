@@ -17,21 +17,32 @@ public class ReverseLinkedList {
         n2.next = n3;
         n1.next = n2;
         h.next = n1;
-        Node reverseList = reverse(h);
+        Node reverseList = reverseRecursive(h);
         while (reverseList != null) {
             System.out.print(reverseList.data + " ");
             reverseList = reverseList.next;
         }
     }
 
-    public static Node reverse(Node h) {
+    public static Node reverseRecursive(Node h) {
         if (h == null || h.next == null) {
             return h;
         }
-        Node t = reverse(h.next);
+        Node t = reverseRecursive(h.next);
         h.next.next = h;
         h.next = null;
         return t;
+    }
+
+    public static Node reverseIterative(Node head) {
+        Node prev = null, temp;
+        while (head != null) {
+            temp = head.next;
+            head.next = prev;
+            prev = head;
+            head = temp;
+        }
+        return prev;
     }
 }
 
