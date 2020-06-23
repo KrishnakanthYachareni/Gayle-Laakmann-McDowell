@@ -10,29 +10,34 @@
 	You can follow me on HackerRank at <a href="https://www.hackerrank.com/yacharenikrish?hr_r=1"> yacharenikrish </a>
 </p>
 
-## HackerRank | Challenges: 116/563 | Points: 16000 | Rank: TODO
-### Algorithms | Challenges: TODO
+## HackerRank | Points: 18723 | [Profile] (https://www.hackerrank.com/yacharenikrish?hr_r=1)
+### Algorithms
 - [Base](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank)
 - [Recursion](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/recursion)
 - [Contests](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/contest)
-### DataStructures | Challenges: TODO
+### DataStructures
 - [Trees](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/datastructures/trees)
-## InterviewBit | Challenges: TODO | Points: TODO | Rank: TODO
+- [Stack](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/datastructures/stack)
+- [Linked List] (https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/datastructures/linkedlist)
+## InterviewBit | Challenges: | Points: 7038 | [Profile] (https://www.interviewbit.com/profile/yacharenikrish)
 - [Arrays](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/arrays)
 - [Binary Search](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/binarysearch)
 - [Hashing](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/hashing)
+- [Linked List] (https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/linkedlist)
 - [Math](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/maths)
 - [String](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/string)
 - [Two Pointer](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/twopointer)
-## CodeChef | Challenges: TODO | Points: TODO | Rank: TODO
-### Algorithms | Challenges: TODO
+## CodeChef | Challenges: Rating: 1516 | [Profile] (https://www.codechef.com/users/yacharenikrish)
 - [Easy](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codechef/easy)
+- [beginner] (https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codechef/begginer)
+- [Codechef Long June20B Contest] (https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codechef/contest/june20b)
 
-## CodeForces | Challenges: TODO | Points: TODO | Rank: TODO
-### Algorithms | Challenges: TODO
+## CodeForces | Challenges: | Rating: 634 | [Profile] (https://codeforces.com/profile/yacharenikrish)
 - [rating<1300](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codeforces/ratingless1300)
+- [Problem A] (https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codeforces/problemset)
+- [codeforces contests] (https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codeforces/contest)
 
-## Spoj | Challenges: TODO | Points: TODO | Rank: TODO
+## Spoj | Challenges: | Points: 0.3 | [Profile] (https://www.spoj.com/users/yacharenikrish/)
 - [Classical](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/spoj/classical)
 
 ## Cracking the coding Interview (Gayle Laakmann McDowell)

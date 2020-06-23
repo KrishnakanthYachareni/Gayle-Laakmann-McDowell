@@ -2,7 +2,7 @@
  * Copyright (c) 2020. All rights Reserved By Krishnakanth Yachareni
  */
 
-package codechef.begginer;
+package codechef.beginner;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;

@@ -2,7 +2,7 @@
  * Copyright (c) 2020. All rights Reserved By Krishnakanth Yachareni
  */
 
-package codechef.begginer;
+package codechef.beginner;
 
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
@@ -10,9 +10,9 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 
 /**
- * @link https://www.codechef.com/problems/FLOW004
+ * @link https://www.codechef.com/problems/FLOW007
  */
-public class FirstAndLastDigit {
+public class ReverseTheNumber {
     public static void main(String[] args) {
         try {
             BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -20,12 +20,13 @@ public class FirstAndLastDigit {
             int t = Integer.parseInt(reader.readLine().trim());
             while (t-- > 0) {
                 int n = Integer.parseInt(reader.readLine());
-                int f = n % 10, s = 0;
+                int rev = 0;
                 while (n != 0) {
-                    s = n % 10;
+                    rev = rev + n % 10;
+                    rev *= 10;
                     n /= 10;
                 }
-                writer.write(String.valueOf(f + s));
+                writer.write(String.valueOf(rev / 10));
                 writer.newLine();
             }
             writer.flush();
