@@ -10,7 +10,7 @@
 	You can follow me on HackerRank at <a href="https://www.hackerrank.com/yacharenikrish?hr_r=1"> yacharenikrish </a>
 </p>
 
-## HackerRank | Points: 18723 | [Profile] (https://www.hackerrank.com/yacharenikrish?hr_r=1)
+## HackerRank | Points: 18723 | [Profile](https://www.hackerrank.com/yacharenikrish?hr_r=1)
 ### Algorithms
 - [Base](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank)
 - [Recursion](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/recursion)
@@ -18,26 +18,26 @@
 ### DataStructures
 - [Trees](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/datastructures/trees)
 - [Stack](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/datastructures/stack)
-- [Linked List] (https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/datastructures/linkedlist)
-## InterviewBit | Challenges: | Points: 7038 | [Profile] (https://www.interviewbit.com/profile/yacharenikrish)
+- [Linked List](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/datastructures/linkedlist)
+## InterviewBit | Challenges: | Points: 7038 | [Profile](https://www.interviewbit.com/profile/yacharenikrish)
 - [Arrays](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/arrays)
 - [Binary Search](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/binarysearch)
 - [Hashing](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/hashing)
-- [Linked List] (https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/linkedlist)
+- [Linked List](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/linkedlist)
 - [Math](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/maths)
 - [String](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/string)
 - [Two Pointer](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/twopointer)
-## CodeChef | Challenges: Rating: 1516 | [Profile] (https://www.codechef.com/users/yacharenikrish)
+## CodeChef | Challenges: Rating: 1516 | [Profile](https://www.codechef.com/users/yacharenikrish)
 - [Easy](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codechef/easy)
-- [beginner] (https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codechef/begginer)
-- [Codechef Long June20B Contest] (https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codechef/contest/june20b)
+- [beginner](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codechef/begginer)
+- [Codechef Long June20B Contest](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codechef/contest/june20b)
 
-## CodeForces | Challenges: | Rating: 634 | [Profile] (https://codeforces.com/profile/yacharenikrish)
+## CodeForces | Challenges: | Rating: 634 | [Profile](https://codeforces.com/profile/yacharenikrish)
 - [rating<1300](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codeforces/ratingless1300)
-- [Problem A] (https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codeforces/problemset)
-- [codeforces contests] (https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codeforces/contest)
+- [Problem A](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codeforces/problemset)
+- [codeforces contests](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codeforces/contest)
 
-## Spoj | Challenges: | Points: 0.3 | [Profile] (https://www.spoj.com/users/yacharenikrish/)
+## Spoj | Challenges: | Points: 0.3 | [Profile](https://www.spoj.com/users/yacharenikrish/)
 - [Classical](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/spoj/classical)
 
 ## Cracking the coding Interview (Gayle Laakmann McDowell)
