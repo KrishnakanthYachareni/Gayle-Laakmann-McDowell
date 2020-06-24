@@ -2,26 +2,33 @@
  * Copyright (c) 2020. All rights Reserved By Krishnakanth Yachareni
  */
 
-package hackerrank.datastructures;
+package hackerrank.datastructures.trees;
 
 import java.util.Scanner;
 
+/**
+ * @link https://www.hackerrank.com/challenges/tree-height-of-a-binary-tree/problem
+ */
 public class HeightOfBinaryTree {
+    static class Node {
+        int data;
+        Node left;
+        Node right;
+
+        public Node(int data) {
+            this.data = data;
+        }
+    }
 
     /**
      * Complete below function to compute height of binary tree
      * <p>
-     * https://www.hackerrank.com/challenges/tree-height-of-a-binary-tree/problem
      * https://www.youtube.com/watch?v=_SiwrPXG9-g
      */
     public static int height(Node root) {
-        // Write your code here.
-        if (null == root) {
+        if (root == null)
             return -1;
-        }
-        int leftDepth = height(root.left);
-        int rightDepth = height(root.right);
-        return 1 + Math.max(leftDepth, rightDepth);
+        return 1 + Math.max(height(root.left), height(root.right));
     }
 
     public static Node insert(Node root, int data) {
