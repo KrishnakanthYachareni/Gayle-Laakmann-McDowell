@@ -32,7 +32,7 @@
 - [beginner](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codechef/begginer)
 - [Codechef Long June20B Contest](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codechef/contest/june20b)
 
-## CodeForces | Challenges: | Rating: 634 | [Profile](https://codeforces.com/profile/yacharenikrish)
+## CodeForces | Challenges: | Rating: 824 | [Profile](https://codeforces.com/profile/yacharenikrish)
 - [rating<1300](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codeforces/ratingless1300)
 - [Problem A](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codeforces/problemset)
 - [codeforces contests](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codeforces/contest)
