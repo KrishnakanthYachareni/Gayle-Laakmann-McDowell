@@ -9,15 +9,21 @@ import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
-import java.util.LinkedList;
-import java.util.Queue;
 
 /**
  * @link https://www.hackerrank.com/contests/smart-interviews/challenges/si-is-complete-binary-tree
+ * <p>
+ * Solution:
+ * A complete binary tree is a binary tree in which all the levels are completely filled except possibly the lowest one, which is filled from the left.
+ * <p>
+ * A complete binary tree has an interesting property that we can use to find the children and parents of any node.
+ * <p>
+ * If the index of any element in the array is i, the element in the index 2i+1 will become the left child and element in 2i+2 index will become the right child.
+ * Also, the parent of any element at index i is given by the lower bound of (i-1)/2.
  */
 public class IsCompleteBinaryTree {
     static class TreeNode {
-        public int data, level;
+        public int data;
         public TreeNode left, right;
 
         TreeNode(int data) {
@@ -37,49 +43,26 @@ public class IsCompleteBinaryTree {
             for (String num : ar) {
                 root = insert(root, Integer.parseInt(num));
             }
-            boolean ans = isCBT(root);
+            boolean ans = isCBT(root, 0, totalNodes(root));
             writer.write(ans ? "Yes" : "No");
             writer.newLine();
             writer.flush();
         }
     }
 
-    /**
-     * Recursive solution
-     * <p>
-     * Complexity: O(n), O(1)
-     */
-    public static boolean isCBT(TreeNode root) {
-        if (root.left.left == null || root.right.right == null)
+    public static boolean isCBT(TreeNode root, int index, int totalNodes) {
+        if (root == null)
             return true;
-        if (root.left == null && root.right == null)
-            return true;
-
-        return isCBT(root.left) && isCBT(root.right);
+        if (index >= totalNodes)
+            return false;
+        return isCBT(root.left, 2 * index + 1, totalNodes) && isCBT(root.right, 2 * index + 2, totalNodes);
     }
 
-    /**
-     * Iterative solution
-     * <p>
-     * Complexity: O(n), O(n)
-     */
-    public static boolean isFBTIterative(TreeNode root) {
-        Queue<TreeNode> q = new LinkedList<>();
-        q.add(root);
-        TreeNode cur;
-        while (!q.isEmpty()) {
-            cur = q.poll();
-            if (cur != null && (cur.left == null && cur.right == null)) {
-                return false;
-            }
-            if (cur.left != null)
-                q.add(cur.left);
-            if (cur.right != null)
-                q.add(cur.right);
-        }
-        return true;
+    public static int totalNodes(TreeNode root) {
+        if (root == null)
+            return 0;
+        return 1 + totalNodes(root.left) + totalNodes(root.right);
     }
-
 
     public static TreeNode insert(TreeNode root, int x) {
         if (root == null)
