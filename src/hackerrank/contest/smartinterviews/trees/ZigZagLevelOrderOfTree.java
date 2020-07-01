@@ -26,7 +26,7 @@ public class ZigZagLevelOrderOfTree {
     }
 
     static class TreeNode {
-        public int data, level;
+        public int data;
         public TreeNode left, right;
 
         TreeNode(int data) {
