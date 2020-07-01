@@ -27,6 +27,7 @@
 - [Math](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/maths)
 - [String](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/string)
 - [Two Pointer](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/twopointer)
+- [Trees](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/trees)
 ## CodeChef | Challenges: Rating: 1516 | [Profile](https://www.codechef.com/users/yacharenikrish)
 - [Easy](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codechef/easy)
 - [beginner](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codechef/begginer)
