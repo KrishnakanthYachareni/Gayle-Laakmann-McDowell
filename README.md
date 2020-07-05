@@ -19,6 +19,7 @@
 - [Trees](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/datastructures/trees)
 - [Stack](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/datastructures/stack)
 - [Linked List](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/datastructures/linkedlist)
+- [Trie](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/datastructures/trie)
 ## InterviewBit | Challenges: | Points: 7038 | [Profile](https://www.interviewbit.com/profile/yacharenikrish)
 - [Arrays](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/arrays)
 - [Binary Search](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/binarysearch)
