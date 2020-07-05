@@ -7,8 +7,7 @@ package hackerrank.contest.smartinterviews.trees;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.LinkedList;
 
 /**
  * Given an array of unique elements, construct a Binary Search Tree and find the number of nodes at a distance K from the given source node S.
@@ -50,16 +49,16 @@ public class NodesAtDistanceK {
     }
 
     public static int nodesAtK(TreeNode root, TreeNode s, int k) {
-        List<TreeNode> path = new ArrayList<>();
+        LinkedList<TreeNode> path = new LinkedList<>();
         helper(root, s, path);
         int ans = count(s, k);
         for (int i = 1; i < path.size(); i++) {
             if (path.get(i).right == path.get(i - 1))
-                ans += count(path.get(i).left, k - i - 1);
+                ans += count(path.get(i).left, k < path.size() ? 0 : k - i - 1);
             else
-                ans += count(path.get(i).right, k - i - 1);
+                ans += count(path.get(i).right, k < path.size() ? 0 : k - i - 1);
         }
-        return ans;
+        return ans + 1;
     }
 
     /**
@@ -76,10 +75,10 @@ public class NodesAtDistanceK {
     /**
      * This method finds the paths from root to given node x.
      */
-    private static boolean helper(TreeNode root, TreeNode s, List<TreeNode> path) {
+    private static boolean helper(TreeNode root, TreeNode s, LinkedList<TreeNode> path) {
         if (root == null)
             return false;
-        path.add(root);
+        path.addFirst(root);
         if (root == s)
             return true;
         if (helper(root.left, s, path) || helper(root.right, s, path))
