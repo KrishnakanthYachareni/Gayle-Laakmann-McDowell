@@ -5,56 +5,42 @@
 package hackerrank.contest.smartinterviews.trees;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
+import java.util.Arrays;
 
 //TODO: Read input as complete binary tree.
 public class IsBST {
-    static class TreeNode {
-        public int data;
-        public TreeNode left, right;
-
-        TreeNode(int data) {
-            this.data = data;
-            this.left = this.right = null;
-        }
-    }
 
     public static void main(String[] args) throws IOException {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-        BufferedWriter writer = new BufferedWriter(new OutputStreamWriter(System.out));
         int t = Integer.parseInt(reader.readLine().trim());
         while (t-- > 0) {
             int n = Integer.parseInt(reader.readLine().trim());
-            String[] ar = reader.readLine().trim().split(" ");
-            TreeNode root = null;
-            for (String num : ar) {
-                root = insert(root, Integer.parseInt(num));
-            }
-            boolean ans = isBST(root, Integer.MIN_VALUE, Integer.MAX_VALUE);
-            writer.write(ans ? "True" : "False");
-            writer.newLine();
-            writer.flush();
+            int[] ar = Arrays.stream(reader.readLine().trim().split(" ")).mapToInt(Integer::parseInt).toArray();
+            boolean ans = inorder(ar, 1, Integer.MIN_VALUE, Integer.MAX_VALUE);
+            System.out.println(ans);
         }
     }
 
-    private static boolean isBST(TreeNode root, int a, int b) {
-        if (root == null)
+    public static boolean inorder(int[] ar, int idx, int a, int b) {
+        if (idx > ar.length) {
             return true;
-        return (root.data > a && root.data < b)
-                && isBST(root.left, a, root.data)
-                && isBST(root.right, root.data, b);
+        }
+        return (ar[idx] > a && ar[idx] < b)
+                && inorder(ar, getLeftChild(ar, idx), a, ar[idx])
+                && inorder(ar, getRightChild(ar, idx), ar[idx], b);
     }
 
-    private static TreeNode insert(TreeNode root, int x) {
-        if (root == null)
-            return new TreeNode(x);
-        if (x < root.data)
-            root.left = insert(root.left, x);
-        else
-            root.right = insert(root.right, x);
-        return root;
+    public static int getRightChild(int[] ar, int index) {
+        if ((2 * index) + 1 < ar.length)
+            return (2 * index) + 1;
+        return -1;
+    }
+
+    public static int getLeftChild(int[] ar, int index) {
+        if (2 * index < ar.length)
+            return 2 * index;
+        return -1;
     }
 }
