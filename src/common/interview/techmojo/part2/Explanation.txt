@@ -1,0 +1,73 @@
+Question No 1:
+--------------------
+Find the top 10 trending hashtags in twitter. You can write a standalone java class(es) / interfaces as deemed to be fit.
+Assumptions &amp;notes :
+1) A tweet is a text being input by tweeters.
+2) A main method in a java class to be implemented which takes the tweet as an input.
+3) You need to extract hashtag from a tweet text (Ex:sachin is hashtag in the tweet -> "Worlds best cricketer
+is #sachin")
+4) Maintain a data structure that keeps tracking of the count of each hashtag that is coming to your main
+method
+5) print the list of top 10 hashtags at the end of main method execution
+
+
+Data Structures used:
+----------------------
+1. Priority Queue/Minheap: Min Heap of size k to keep top k most frequent hashTag words (where k = 10)
+2. LinkedHashMap: To keep the frequency of each word.
+
+Solution Approach:
+---------------------
+1. Extracted the hashTags from given Tweet text.
+2. Calculated the frequency of all the hashTags and inserting into LinkedHashMap.
+3. Start adding pair Node of word(hashTag) and its frequency into a min heap where we use the frequency as the key for the min heap.
+4. If the minHeap is full then remove the minimum element (top) by doing minify form the minHeap and add the new node(word-frequency pair) only
+   if the frequency of current word has frequency greater than the top word in the heap.
+5. Once we iterate all the words in the map and the minHeap is properly updated and it contains top 10 most frequent hashTags.
+
+Time Complexity:
+---------------------
+n + n log k = O(n log k)
+where k = 10 and for each element we perform minify which takes log k time. another n for heaping(map).
+
+Space Complexity:
+---------------------
+n + k -> O(n)
+where k = 10
+
+Sample Input:
+---------------------
+Elon Musk co-founded and leads #Tesla, #SpaceX, #Neuralink and The Boring #US Companies. As the co-founder and CEO of #Tesla, Elon leads all product design, engineering and global manufacturing of the company's electric vehicles, battery products and solar energy products and #Tesla also produces three energy storage products, the #Powerwall home battery, the #Powerpack commercial-scale battery, and Megapack, which is designed for utility-scale installations.Trump becomes the 45th #US President Potentially habitable exoplanet #ProximaB discovered #RogerFederer wins #US Open for 5th time #GravitationalWaves detection successful Traces of liquid water discovered on #Mars Life Could Survive on Exoplanet #ProximaB Go go #RogerFederer Ten ways #ProximaB is different from Earth ISRO becomes 4th space agency to reach #Mars #RogerFederer beats #Nadal
+
+Sample Output:
+---------------------
+#Tesla
+#US
+#RogerFederer
+#ProximaB
+#Mars
+#Powerpack
+#GravitationalWaves
+#Powerwall
+#SpaceX
+#Neuralink
+
+
+Approach-2:
+--------------------
+Another approach in my mind to use the combination of Trie and PriorityQueue/minHeap. Here Trie is alternative of Map and it is memory efficient.
+
+Data Structures:
+-------------------
+1. Trie: Use Trie for searching existing words and adding new words efficiently and it also maintains the frequency of words.
+2. Priority Queue/Minheap: Min Heap of size k to keep top k most frequent hashTag words (where k = 10)
+
+Time Complexity:
+------------------
+n + (n * m) + k = O(n * m)
+where k = 10 and m is the longest length of the hashTag or word
+
+Space Complexity:
+------------------
+26 + m + k = O(m + k)
+where 26-letters, k = 10 elements in minHeap, m = longest word length.
