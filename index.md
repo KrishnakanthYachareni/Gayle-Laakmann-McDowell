@@ -1,37 +1,53 @@
-## Welcome to GitHub Pages
+<p align="center">
+	<a href="https://www.hackerrank.com/yacharenikrish?hr_r=1">
+		<img src="https://cloud.githubusercontent.com/assets/19765741/25342064/d17a563c-28d8-11e7-83fc-763d4ab4820a.jpg">
+	</a>
+</p>
+<p align="center">
+    Problem solutions of HackerRank, Codechef, Codeforces, Spoj, Interviewbit, Cracking the Coding Interview book.
+</p>
+<p align="center">
+	You can follow me on HackerRank at <a href="https://www.hackerrank.com/yacharenikrish?hr_r=1"> yacharenikrish </a>
+</p>
 
-You can use the [editor on GitHub](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+## HackerRank | Points: 18723 | [Profile](https://www.hackerrank.com/yacharenikrish?hr_r=1)
+### Algorithms
+- [Base](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank)
+- [Recursion](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/recursion)
+- [Contests](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/contest)
+### DataStructures
+- [Trees](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/datastructures/trees)
+- [Stack](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/datastructures/stack)
+- [Linked List](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/datastructures/linkedlist)
+- [Trie](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/hackerrank/datastructures/trie)
+## InterviewBit | Challenges: | Points: 7038 | [Profile](https://www.interviewbit.com/profile/yacharenikrish)
+- [Arrays](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/arrays)
+- [Binary Search](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/binarysearch)
+- [Hashing](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/hashing)
+- [Linked List](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/linkedlist)
+- [Math](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/maths)
+- [String](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/string)
+- [Two Pointer](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/twopointer)
+- [Trees](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/interviewbit/trees)
+## CodeChef | Challenges: Rating: 1516 | [Profile](https://www.codechef.com/users/yacharenikrish)
+- [Easy](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codechef/easy)
+- [beginner](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codechef/begginer)
+- [Codechef Long June20B Contest](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codechef/contest/june20b)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## CodeForces | Challenges: | Rating: 824 | [Profile](https://codeforces.com/profile/yacharenikrish)
+- [rating<1300](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codeforces/ratingless1300)
+- [Problem A](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codeforces/problemset)
+- [codeforces contests](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/codeforces/contest)
 
-### Markdown
+## Spoj | Challenges: | Points: 0.3 | [Profile](https://www.spoj.com/users/yacharenikrish/)
+- [Classical](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/spoj/classical)
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Cracking the coding Interview (Gayle Laakmann McDowell)
+### Algorithms
+- [Strings](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/com/book/strings)
+- [Stack](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/com/book/stack)
+- [LinkedList](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/com/book/linkedList)
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+# Important concepts
+1. Difference between ASCII, Extended ASCII String and Unicode String
+[ASCII VS Unicode](https://stackoverflow.com/questions/19212306/whats-the-difference-between-ascii-and-unicode)
