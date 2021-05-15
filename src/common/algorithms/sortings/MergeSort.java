@@ -27,7 +27,7 @@ public final class MergeSort {
 	}
 
 	/**
-	 * Given the two sorted arrays merge then into one array and sort it. The
+	 * Given the two sorted arrays merge them into one array and sort it. The
 	 * below method is being used Two pointer mechanism to sort the array.
 	 */
 	private static void merge(int[] ar, int low, int mid, int high) {
