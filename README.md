@@ -42,6 +42,9 @@
 ## Spoj | Challenges: | Points: 0.3 | [Profile](https://www.spoj.com/users/yacharenikrish/)
 - [Classical](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/spoj/classical)
 
+## LeetCode | Challenges: | [Profile](https://leetcode.com/yachareni/)
+- [Amazon](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/leetcode/amazon)
+
 ## Cracking the coding Interview (Gayle Laakmann McDowell)
 ### Algorithms
 - [Strings](https://github.com/KrishnakanthYachareni/Gayle-Laakmann-McDowell/tree/master/src/com/book/strings)
