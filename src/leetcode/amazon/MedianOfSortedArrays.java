@@ -1,26 +1,33 @@
-package hackerrank.contest.smartinterviews.classroom;
+package leetcode.amazon;
 
 /**
- * Class room problem.
+ * Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays.
  * <p>
- * It Works only on the n+m = odd
- * Page No: 52
+ * The overall run time complexity should be O(log (m+n)).
+ * <p>
+ * {@link https://leetcode.com/problems/median-of-two-sorted-arrays/}
  */
+//TODO: Incomplete
 public final class MedianOfSortedArrays {
 
     public static void main(String[] args) {
-        int[] a = {3, 10, 12, 18, 23};
-        int[] b = {-8, -2, 1, 7, 13, 15, 27, 31};
-        int ans = median(a, a.length, b, b.length);
+        int[] a = {};
+        int[] b = {1};
+        double ans = findMedianSortedArrays(a, b);
         System.out.println(ans);
     }
 
-    public static int median(int[] a, int n, int[] b, int m) {
-        int low = Math.min(a[0], b[0]), high = Math.max(a[n - 1], b[m - 1]), mid;
+    public static double findMedianSortedArrays(int[] nums1, int[] nums2) {
+        int n = nums1.length, m = nums2.length;
+        int low = 0, high = 0, mid = 0;
+        if (n != 0 && m != 0) {
+            low = Math.min(nums1[0], nums2[0]);
+            high = Math.max(nums1[n - 1], nums2[m - 1]);
+        }
         while (low <= high) {
             mid = (low + high) / 2;
-            int smallCount = f1(a, n, mid) + f1(b, m, mid);
-            int greaterCount = f2(a, n, mid) + f2(b, m, mid);
+            int smallCount = f1(nums1, n, mid) + f1(nums2, m, mid);
+            int greaterCount = f2(nums1, n, mid) + f2(nums2, m, mid);
             if (smallCount > greaterCount) {
                 high = mid - 1;
             } else if (smallCount < greaterCount) {
@@ -29,10 +36,10 @@ public final class MedianOfSortedArrays {
                 return mid;
             }
         }
-        return 0;
+        return (mid + mid - 1) / 2.0;
     }
 
-    static int f1(int[] ar, int n, int x) {
+    private static int f1(int[] ar, int n, int x) {
         int low = 0, high = n - 1, mid, ans = 0;
         while (low <= high) {
             mid = (low + high) / 2;
@@ -46,7 +53,7 @@ public final class MedianOfSortedArrays {
         return ans;
     }
 
-    static int f2(int[] ar, int n, int x) {
+    private static int f2(int[] ar, int n, int x) {
         int low = 0, high = n - 1, mid, ans = 0;
         while (low <= high) {
             mid = (low + high) / 2;
