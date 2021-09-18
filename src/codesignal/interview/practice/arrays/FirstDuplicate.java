@@ -1,4 +1,4 @@
-package codesignal.interview.practice;
+package codesignal.interview.practice.arrays;
 
 import java.util.HashSet;
 import java.util.Set;

@@ -1,4 +1,4 @@
-package codesignal.interview.practice;
+package codesignal.interview.practice.arrays;
 
 import java.util.Arrays;
 import java.util.stream.Stream;

@@ -1,4 +1,4 @@
-package codesignal.interview.practice;
+package codesignal.interview.practice.arrays;
 
 /**
  * https://app.codesignal.com/interview-practice/task/5A8jwLGcEpTPyyjTB/description
