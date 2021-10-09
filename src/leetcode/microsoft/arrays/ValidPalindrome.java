@@ -4,12 +4,10 @@ public class ValidPalindrome {
 
     public static void main(String[] args) {
         String s = "A man, a plan, a canal: Panama";
-//        s = s.replaceAll("[^A-Za-z0-9]", "").toLowerCase();
-//        System.out.println(isPalindrome(s));
-        System.out.println(myAtoi("4193 with words"));
+        System.out.println(isPalindrome(s));
     }
 
-    /*public static boolean isPalindrome(String s) {
+    public static boolean isPalindrome(String s) {
         StringBuilder st = new StringBuilder();
         for (char ch : s.toCharArray()) {
             if (Character.isLetterOrDigit(ch)) {
@@ -17,7 +15,23 @@ public class ValidPalindrome {
             }
         }
         return st.toString().equals(st.reverse().toString());
-    }*/
+    }
+
+    public boolean isPalindrome2(String s) {
+        for (int i = 0, j = s.length() - 1; i < j; i++, j--) {
+            while (i < j && !Character.isLetterOrDigit(s.charAt(i))) {
+                i++;
+            }
+            while (i < j && !Character.isLetterOrDigit(s.charAt(j))) {
+                j--;
+            }
+
+            if (Character.toLowerCase(s.charAt(i)) != Character.toLowerCase(s.charAt(j)))
+                return false;
+        }
+
+        return true;
+    }
 
     public static int myAtoi(String s) {
         long ans = 0;
