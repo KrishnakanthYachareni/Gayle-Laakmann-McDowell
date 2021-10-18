@@ -8,7 +8,8 @@ package leetcode.amazon;
 public class LongestPalindrome {
     public static void main(String[] args) {
         String ans = longestPalindrome("cbbd");
-        System.out.println(ans);
+//        System.out.println(ans);
+        System.out.println(10/10);
     }
 
     public static String longestPalindrome(String s) {
