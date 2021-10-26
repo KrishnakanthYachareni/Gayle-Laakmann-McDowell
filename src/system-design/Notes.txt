@@ -1,0 +1,5 @@
+All Educative: https://akshay-iyangar.github.io/system-design/
+
+1. https://leetcode.com/discuss/general-discussion/125038/system-design-interview-prep
+2. https://www.codekarle.com/
+3. https://www.youtube.com/playlist?list=PLhgw50vUymycJPN6ZbGTpVKAJ0cL4OEH3
