@@ -68,3 +68,8 @@ The result is a distributed database in which users can access data relevant to 
 
 15. **[Sharding](https://www.mongodb.com/features/database-sharding-explained):** Sharding is a method for distributing a single dataset across multiple databases, which can then be stored on multiple machines. 
 This allows for larger datasets to be split in smaller chunks and stored in multiple data nodes, increasing the total storage capacity of the system.
+
+
+## References
+1. https://akshay-iyangar.github.io/system-design/
+2. 
