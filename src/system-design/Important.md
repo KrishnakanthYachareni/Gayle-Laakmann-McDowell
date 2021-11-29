@@ -72,4 +72,4 @@ This allows for larger datasets to be split in smaller chunks and stored in mult
 
 ## References
 1. https://akshay-iyangar.github.io/system-design/
-2. 
+2. https://medium.com/storyblocks-engineering/web-architecture-101-a3224e126947
