@@ -1,7 +1,7 @@
 package dynamicporgramming;
 
 /**
- * https://leetcode.com/problems/unique-paths/
+ * https://leetcode.com/problems/unique-paths-ii/
  */
 public class UniquePaths2 {
     public static void main(String[] args) {
@@ -18,7 +18,7 @@ public class UniquePaths2 {
      * For the dp table can be used for same given matrix, Hence space id O(1)
      */
     public static int uniquePathsWithObstacles(int[][] grid) {
-        // No Paths from the begging
+        // No Paths from the beginning
         if (grid[0][0] == 1)
             return 0;
 
@@ -55,7 +55,7 @@ public class UniquePaths2 {
      * TC = O(M * N), SC = O(M * N)
      */
     public static int uniquePathsWithObstaclesBA(int[][] grid) {
-        // No Paths from the begging
+        // No Paths from the beginning
         if (grid[0][0] == 1)
             return 0;
 
