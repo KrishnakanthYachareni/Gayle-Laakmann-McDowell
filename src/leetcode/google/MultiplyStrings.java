@@ -30,8 +30,6 @@ public class MultiplyStrings {
 
     /**
      * This method multiply the given number as a string and single digit number
-     *
-     * @return
      */
     public static StringBuilder multiplyOneDigit(String num1, char digit) {
         StringBuilder ans = new StringBuilder();
