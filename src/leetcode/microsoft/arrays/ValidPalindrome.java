@@ -32,37 +32,4 @@ public class ValidPalindrome {
 
         return true;
     }
-
-    public static int myAtoi(String s) {
-        long ans = 0;
-        boolean isNegative = false;
-
-        for (int i = 0; i < s.length(); ) {
-            char ch = s.charAt(i);
-            if ('+' == ch) {
-                i++;
-            } else if (ans == 0 && (Character.isLetter(ch) || '.' == ch)) {
-                break;
-            } else if (ans != 0 && (Character.isLetter(ch) || '.' == ch)) {
-                break;
-            } else if (Character.isWhitespace(ch)) {
-                i++;
-            } else if (ch == '-') {
-                isNegative = true;
-                i++;
-            } else if (Character.isDigit(ch)) {
-                ans = ans * 10 + Character.getNumericValue(ch);
-                i++;
-            }
-        }
-        if (ans < -2147483648) {
-            return -2147483648;
-        }
-        if (ans > 2147483647) {
-            return -2147483648;
-        }
-        return (int) (isNegative ? -1 * ans : ans);
-    }
-
-
 }
