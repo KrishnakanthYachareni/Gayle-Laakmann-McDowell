@@ -1,9 +1,6 @@
 package leetcode.amazon;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 /**
  * https://leetcode.com/problems/4sum/
@@ -20,6 +17,7 @@ public class FourSum {
         System.out.println(fourSum(ar, 8));
 
 //        threeSum(ar, 8);
+
     }
 
     public static List<List<Integer>> fourSum(int[] nums, int target) {
