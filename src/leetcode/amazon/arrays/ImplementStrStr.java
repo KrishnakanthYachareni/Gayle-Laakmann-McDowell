@@ -1,4 +1,4 @@
-package leetcode.amazon;
+package leetcode.amazon.arrays;
 
 /**
  * https://leetcode.com/problems/implement-strstr/

@@ -2,7 +2,7 @@
  * Copyright (c) 2021 by Krishnakanth Yachareni
  */
 
-package leetcode.amazon;
+package leetcode.amazon.arrays;
 
 /**
  * Problem: Merge two sorted linked lists and return it as a sorted list. The list should be made by splicing together the nodes of the first two lists.

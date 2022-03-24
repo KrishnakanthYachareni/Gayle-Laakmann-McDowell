@@ -1,4 +1,4 @@
-package leetcode.amazon;
+package leetcode.amazon.arrays;
 
 /**
  * Problem: https://leetcode.com/problems/longest-palindromic-substring/
