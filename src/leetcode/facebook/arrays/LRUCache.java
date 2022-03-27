@@ -14,6 +14,20 @@ public class LRUCache {
         }
     }
 
+    private final Map<Integer, Node> map;
+    private final int capacity;
+    private final Node head;
+    private final Node tail;
+
+    public LRUCache(int capacity) {
+        this.capacity = capacity;
+        map = new HashMap<>();
+        head = new Node(-1, -1); // Dummy head
+        tail = new Node(-1, -1); // Dummy tail
+        head.next = tail;
+        tail.prev = head;
+    }
+
     // Adds a node before head (Frequently used items at the head)
     private void add(Node nn) {
         nn.prev = head;
@@ -32,20 +46,6 @@ public class LRUCache {
         Node node = tail.prev;
         delete(node);
         return node;
-    }
-
-    private final Map<Integer, Node> map;
-    private final int capacity;
-    private final Node head;
-    private final Node tail;
-
-    public LRUCache(int capacity) {
-        this.capacity = capacity;
-        map = new HashMap<>();
-        head = new Node(-1, -1); // Dummy head
-        tail = new Node(-1, -1); // Dummy tail
-        head.next = tail;
-        tail.prev = head;
     }
 
     public int get(int key) {
