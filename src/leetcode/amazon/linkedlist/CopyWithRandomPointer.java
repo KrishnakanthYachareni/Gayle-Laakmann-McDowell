@@ -21,6 +21,42 @@ public class CopyWithRandomPointer {
         }
     }
 
+    // TC = O(N), SC = O(1)
+    public Node copyRandomList(Node head) {
+        if (head == null) {
+            return null;
+        }
+
+        // Step 1: Link cloned copy of each node in the middle of each original nodes
+        Node curr = head;
+        while (curr != null) {
+            Node nn = new Node(curr.val);
+            nn.next = curr.next;
+            curr.next = nn;
+            curr = nn.next;
+        }
+
+        // Step 2: Assign random pointers to cloned nodes
+        curr = head;
+        while (curr != null) {
+            curr.next.random = curr.random != null ? curr.random.next : null;
+            curr = curr.next.next;
+        }
+
+        // Step 3: Unlink the original nodes
+        Node orig = head, copy = head.next;
+        Node temp = head.next;
+        while (orig != null) {
+            orig.next = orig.next.next;
+            copy.next = copy.next != null ? copy.next.next : null;
+            copy = copy.next;
+            orig = orig.next;
+        }
+        return temp;
+    }
+
+
+    /*// TC = O(N), SC = O(N)
     private final Map<Node, Node> map = new HashMap<>();
 
     public Node copyRandomList(Node head) {
@@ -37,5 +73,5 @@ public class CopyWithRandomPointer {
         nn.random = copyRandomList(head.random);
 
         return nn;
-    }
+    }*/
 }
