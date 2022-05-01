@@ -1,10 +1,14 @@
 package dynamicporgramming;
 
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class LevenshteinDistance {
 
+    /**
+     * sunday, saturday  -> 3
+     * AGGCTATCACCTGACCTCCAGGCCGATGCCC, TAGCTATCACGACCGCGGTCGATTTGCCCGAC -> 13
+     *
+     */
     public static void main(String[] args) {
 //        String s1 = "intention", s2 = "execution";
         System.out.println("Enter two strings");
