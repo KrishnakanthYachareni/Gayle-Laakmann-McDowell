@@ -1,20 +1,9 @@
 package dynamicporgramming;
 
-import java.util.Scanner;
-
 public class LevenshteinDistance {
 
-    /**
-     * sunday, saturday  -> 3
-     * AGGCTATCACCTGACCTCCAGGCCGATGCCC, TAGCTATCACGACCGCGGTCGATTTGCCCGAC -> 13
-     *
-     */
     public static void main(String[] args) {
-//        String s1 = "intention", s2 = "execution";
-        System.out.println("Enter two strings");
-        Scanner sc = new Scanner(System.in);
-        String s1 = sc.next();
-        String s2 = sc.next();
+        String s1 = "intention", s2 = "execution"; // 5
         int[][] decisionTable = minDistance(s1, s2);
         System.out.println("Minimum Edit distance is: " + decisionTable[s1.length()][s2.length()]);
         System.out.println("Operations are: ");
