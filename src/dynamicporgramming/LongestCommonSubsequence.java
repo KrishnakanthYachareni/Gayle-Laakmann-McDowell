@@ -1,13 +1,16 @@
 package dynamicporgramming;
 
+import java.util.Arrays;
+
 /**
  * https://leetcode.com/problems/longest-common-subsequence/
  */
 public class LongestCommonSubsequence {
     public static void main(String[] args) {
-        String s1 = "abcde", s2 = "ace";
+        String s1 = "scholarly", s2 = "heroically";
         int ans = longestCommonSubsequence(s1, s2);
-        System.out.println(ans);
+//        System.out.println(ans);
+        
     }
 
     /**
@@ -30,6 +33,10 @@ public class LongestCommonSubsequence {
                     dp[i][j] = Math.max(dp[i][j - 1], dp[i - 1][j]);
                 }
             }
+        }
+
+        for(int[] row: dp) {
+            System.out.println(Arrays.toString(row));
         }
         return dp[m][n];
     }

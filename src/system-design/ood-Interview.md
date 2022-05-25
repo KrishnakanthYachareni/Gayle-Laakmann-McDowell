@@ -1,4 +1,14 @@
 ### Object Oriented Design
+#### OOD Template
+1. Types of bookings
+2. Login Functionality
+3. Retrieve stored information
+4. Cancellation policy
+5. Notifications
+6. Payments/Bills if any
+7. Admin Role
+8. 
+
 Steps to follow before begin writing code are
 <br>
 **Step 1:** Ask list of features and clarification about the requirements.
