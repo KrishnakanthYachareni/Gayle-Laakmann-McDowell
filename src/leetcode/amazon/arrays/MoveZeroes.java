@@ -1,5 +1,8 @@
 package leetcode.amazon.arrays;
 
+/**
+ * https://leetcode.com/problems/move-zeroes/
+ */
 public class MoveZeroes {
     public void moveZeroes(int[] nums) {
         int nonZero = 0;
