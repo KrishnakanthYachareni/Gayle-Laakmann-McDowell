@@ -6,7 +6,7 @@ public class ProductOfArray {
     }
 
     /**
-     * TC = O(N), SC = O(1)
+     * TC = O(N), SC = O(N)
      * <p>
      * The only change in this approach is that we don't explicitly build the suffix array from before.
      * Instead, we simply use a variable to keep track of the running product of elements to the right,

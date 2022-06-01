@@ -13,8 +13,8 @@ import java.util.*;
  */
 public class FourSum {
     public static void main(String[] args) {
-        int[] ar = {2, 2, 2, 2, 2};
-        System.out.println(fourSum(ar, 8));
+        int[] ar = {7, 6, 4, -1, 1, 2};
+        System.out.println(fourSum(ar, 16));
 
 //        threeSum(ar, 8);
 
