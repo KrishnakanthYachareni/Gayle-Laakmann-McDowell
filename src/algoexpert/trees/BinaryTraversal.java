@@ -45,6 +45,37 @@ public class BinaryTraversal {
         return result;
     }
 
+
+    // https://www.youtube.com/watch?v=qT65HltK2uE
+    // Using two stacks
+    public List<Integer> postorderTraversal(TreeNode root) {
+        List<Integer> postOrderList = new ArrayList<>();
+
+        if (root == null)
+            return postOrderList;
+
+        Stack<TreeNode> s1 = new Stack<>();
+        Stack<TreeNode> s2 = new Stack<>();
+
+        s1.push(root);
+
+        while (!s1.isEmpty()) {
+            TreeNode currentNode = s1.pop();
+            s2.push(currentNode);
+
+            if (currentNode.left != null)
+                s1.push(currentNode.left);
+
+            if (currentNode.right != null)
+                s1.push(currentNode.right);
+        }
+
+        while (!s2.isEmpty()) {
+            postOrderList.add(s2.pop().val);
+        }
+        return postOrderList;
+    }
+
    /*
    Recursive solutions
    ----------------------
