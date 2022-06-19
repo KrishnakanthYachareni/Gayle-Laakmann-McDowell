@@ -5,6 +5,7 @@ public class ValidateBST {
         return isValidBST(root, null, null);
     }
 
+    // TC = O(N), SC = O(N)
     private static boolean isValidBST(TreeNode root, Integer low, Integer high) {
         if (root == null)
             return true;
