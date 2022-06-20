@@ -25,13 +25,13 @@ public class CycleInGraph {
     }
 
     private static boolean traverseAndMarkColor(int[][] edges, int node, int[] colors) {
+        if (colors[node] == GREY) // Back Edge forms a cycle
+            return true;
+
         colors[node] = GREY;
         int[] neighbors = edges[node];
 
         for (int neighbor : neighbors) {
-            if (colors[neighbor] == GREY) // Back Edge forms a cycle
-                return true;
-
             if (colors[neighbor] == BLACK) // If finished
                 continue;
 
