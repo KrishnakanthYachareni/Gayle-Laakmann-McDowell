@@ -55,12 +55,12 @@ public class KthLargestElementArray {
     }
     //  TC = O(N log K), SC = O(k)
     /*public int findKthLargest(int[] nums, int k) {
-        // init heap 'the smallest element first'
+        // init heap 'the smallest element first' (min Heap)
         PriorityQueue<Integer> queue = new PriorityQueue<>();
         for (int num : nums) {
             queue.add(num);
 
-            // keep k largest elements in the heap and remove small elements if exceeds k
+            // keep k the largest elements in the heap and remove small elements if exceeds k
             if (queue.size() > k)
                 queue.poll();
         }

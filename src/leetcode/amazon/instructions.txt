@@ -1,0 +1,73 @@
+Amazon Technical Interview (2022)
+
+--------------
+Written on basis of my Amazon SDE 2 interview Experience
+https://lnkd.in/esWT52fV
+
+--------------
+
+Interview process
+--------------
+
+Here’s what to expect in an Amazon Interview Process
+
+◈ Recruiter Call (20-30 mins)[No coding]
+
+Questions related to your professional experience and expectations.
+Discussion around the team they are hiring for. Feel free to ask any questions.
+
+◈ Online Assessment
+
+You need to solve 2/3 DSA questions within 2/3 hours on a coding platform.
+You will be informed about the number of questions and duration before hand
+
+◈ The actual rounds (4-5 interviews) - Coding, LLD and HLD
+
+The rounds are pretty templatized:
+1) Duration - 1 hour.
+2) Questions about Amazon's leadership principles.
+3) Except for the bar raiser round, all your rounds shall be conducted by someone from the team you are being hired for.
+
+➡ 1-2 Coding Rounds - There will be 2 DSA questions in the round, and you are expected to come up with the most optimized solution.
+
+➡ Low-Level Design Round - You will be expected to write LLD for some system that is loosely relevant to your job. Ex: Design Alexa
+
+➡ High-Level Design Round - This round shall be based on your profile (frontend or backend).
+
+➡ Bar Raiser Design Round - This is again a coding round. There will be 2 DSA questions in the round, and you are expected to come up with the most optimized solution.
+
+◈ Amazon Leadership principles
+
+Every round has some time reserved for asking leadership principle questions.
+Prep Guide - https://lnkd.in/eTnicuDQ
+
+--------------
+
+Interview Tips
+--------------
+
+1) Explain your thought process - Extremely important. Practice describing your solution and design decisions clearly and concisely.
+2) Collaborate – Don't forget to discuss, present multiple solutions, and take hints from the interviewer.
+3) Be well-prepared for the leadership principle questions, do not take those lightly.
+
+-----------
+
+Amazon Coding Questions (2022)
+-----------
+
+1) Number of Islands - https://lnkd.in/dHQJGhPJ
+2) k Jumps on Grid - https://lnkd.in/dKM_ETsM)
+3) Finding Prefix in Dictionary - https://lnkd.in/dpRvFDq5
+4) Binary Tree Top-Down View - https://lnkd.in/dmun-Pn3
+5) Diameter of a binary tree [Path is needed] - https://lnkd.in/dH-w_DQV
+6) Contains Duplicates III - https://lnkd.in/djcWHTaX
+7) Minimum Window Substring [Variation of this question] - https://lnkd.in/dPfnQZmr
+
+This is a compilation of public information
+Complete Article https://lnkd.in/eSip3gS3
+---------------
+
+Follow: Sandeep Kumar
+
+𝐂𝐨𝐧𝐬𝐮𝐥𝐭𝐚𝐭𝐢𝐨𝐧  https://lnkd.in/eRVX3fRz
+If you are stuck with questions or unable to crack interviews, hire me for consultation.

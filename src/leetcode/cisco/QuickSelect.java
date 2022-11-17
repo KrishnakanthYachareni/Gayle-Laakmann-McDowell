@@ -11,7 +11,6 @@ public class QuickSelect {
         System.out.print(ans);
     }
 
-
     public static int quickSelect(int[] nums, int left, int right, int k) {
         if (left == right) {
             return nums[left];
