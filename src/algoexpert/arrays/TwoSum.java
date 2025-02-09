@@ -6,7 +6,6 @@ import java.util.Map;
 public class TwoSum {
 
     public static int[] twoNumberSum(int[] array, int targetSum) {
-        // Write your code here.
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < array.length; i++) {
             int r = targetSum - array[i];

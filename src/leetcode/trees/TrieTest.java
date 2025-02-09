@@ -1,6 +1,8 @@
 package leetcode.trees;
 
 
+import java.util.HashMap;
+
 public class TrieTest {
     public static void main(String[] args) {
         Trie trie = new Trie();

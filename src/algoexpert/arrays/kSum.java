@@ -5,6 +5,8 @@ import java.util.Arrays;
 import java.util.List;
 
 public class kSum {
+
+    // Array should be sorted before
     private static List<List<Integer>> kSum(int[] array, int target, int start, int k) {
         int n = array.length;
         List<List<Integer>> quads = new ArrayList<>();
