@@ -1,28 +1,48 @@
 package graphs;
 
-import java.util.LinkedList;
 import java.util.List;
-import java.util.Queue;
+import java.util.Stack;
 
 public class DfsSearch {
 
 
-    /*public static void bfsBasicSearch(List<List<Integer>> graph, int source) {
-        Queue<Integer> queue = new LinkedList<>();
-        queue.add(source);
+   /* // DFS using Iteration
+    public static void dfsBasicSearchIteration(List<List<Integer>> graph, int source) {
+        Stack<Integer> stack = new Stack<>();
+        stack.add(source);
 
         boolean[] visited = new boolean[graph.size()];
         visited[source] = true;
 
-        while (!queue.isEmpty()) {
-            int currentNode = queue.poll();
-            System.out.println("Node Visited: " + currentNode);
+        while (!stack.isEmpty()) {
+            int currentNode = stack.pop();
+            System.out.println("Current Node: " + currentNode);
 
             for (int neighbour : graph.get(currentNode)) {
                 if (!visited[neighbour]) {
-                    queue.add(neighbour);
-                    visited[neighbour] = true;
+                    stack.add(neighbour);
+                    visited[neighbour] = true; // Mark visited
                 }
+            }
+        }
+    }
+*/
+
+    /*// DFS using recursion
+    public static void dfsBasicSearchRecursive(List<List<Integer>> graph, int source) {
+        boolean[] visited = new boolean[graph.size()];
+
+        dfsHelper(graph, source, visited);
+    }
+
+    private static void dfsHelper(List<List<Integer>> graph, int currentNode, boolean[] visited) {
+        visited[currentNode] = true;
+        System.out.println("Current Node: " + currentNode);
+
+        for (int neighbour : graph.get(currentNode)) {
+            if (!visited[neighbour]) {
+                visited[neighbour] = true;
+                dfsHelper(graph, neighbour, visited);
             }
         }
     }*/
@@ -33,9 +53,9 @@ public class DfsSearch {
      *  2. parent[node] = P; -> To backTrack to the parent
      *
      */
-    public static void bfsShortestPath(List<List<Integer>> graph, int source, int dest) {
-        Queue<Integer> queue = new LinkedList<>();
-        queue.add(source);
+    public static void dfsShortestPath(List<List<Integer>> graph, int source, int dest) {
+        Stack<Integer> stack = new Stack<>();
+        stack.add(source);
 
         boolean[] visited = new boolean[graph.size()];
         visited[source] = true;
@@ -46,28 +66,27 @@ public class DfsSearch {
         int[] parent = new int[graph.size()];
         parent[source] = source;
 
-        while (!queue.isEmpty()) {
-            int currentNode = queue.poll();
+        while (!stack.isEmpty()) {
+            int currentNode = stack.pop();
 
             for (int neighbour : graph.get(currentNode)) {
                 if (!visited[neighbour]) {
-                    queue.add(neighbour);
-                    visited[neighbour] = true; // Mark as visited
+                    stack.add(neighbour);
+                    visited[neighbour] = true; // Mark visited
 
-                    distance[neighbour] = distance[currentNode] + 1; // Calculate distance of node
-                    parent[neighbour] = currentNode; // Parent Node
+                    distance[neighbour] = distance[currentNode] + 1;
+                    parent[neighbour] = currentNode;
                 }
             }
         }
 
-        // Print the shortest distance
+        // Shortest path from the source
         for (int i = 0; i < graph.size(); i++) {
-            System.out.println("Shortest dest to " + i + " is " + distance[i]);
+            System.out.println("Shortest path to the " + i + " is " + distance[i]);
         }
 
-        // Print the path from any destination
-        System.out.print("Shortest Path from Dest is: ");
-        while (source != dest) {
+        // Print the path from source to destination node
+        while (dest != source) {
             System.out.print(dest + " --> ");
             dest = parent[dest];
         }
@@ -85,7 +104,7 @@ public class DfsSearch {
         graph.addEdge(4, 5);
         // graph.printGraph();
 
-        bfsShortestPath(graph.getGraph(), 1, 6);
+        dfsShortestPath(graph.getGraph(), 1, 6);
     }
 
 }
