@@ -75,7 +75,7 @@ public class BfsSearch {
     }
 
     public static void main(String[] args) {
-        GraphNode graph = new GraphNode(6, true);
+        GraphNodeLegacy graph = new GraphNodeLegacy(6, true);
         graph.addEdge(1, 2);
         graph.addEdge(1, 0);
         graph.addEdge(2, 3);

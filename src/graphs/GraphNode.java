@@ -1,38 +1,52 @@
 package graphs;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class GraphNode {
-    private final List<List<Integer>> graph;
-    private final boolean isUndirected;
 
-    public GraphNode(int vertices, boolean isUndirected) {
-        this.isUndirected = isUndirected;
-        this.graph = new ArrayList<>();
-        while (vertices-- >= 0) {
-            graph.add(new ArrayList<>());
+    private final Map<Integer, List<Integer>> graph;
+    private final boolean isDirected;
+
+    public GraphNode(int vertices, boolean isDirected) {
+        this.graph = new HashMap<>();
+        for (int i = 0; i < vertices; i++) {
+            this.graph.put(i, new ArrayList<>());
         }
+        this.isDirected = isDirected;
     }
 
+    // Directed Graph
     public void addEdge(int v1, int v2) {
-        this.graph.get(v1).add(v2);
-        if (isUndirected) {
+        if (isDirected) {
+            this.graph.get(v1).add(v2);
+        } else {
+            this.graph.get(v1).add(v2);
             this.graph.get(v2).add(v1);
         }
     }
 
-    public List<List<Integer>> getGraph() {
-        return this.graph;
-    }
-
-    public boolean isUndirected() {
-        return this.isUndirected;
-    }
-
     public void printGraph() {
-        for (int i = 0; i < graph.size(); i++) {
-            System.out.println("Vertex : " + i + "--> " + graph.get(i));
+        for (Map.Entry<Integer, List<Integer>> entry : graph.entrySet()) {
+            System.out.println("Vertex: " + entry.getKey() + "--> " + entry.getValue());
         }
     }
+
+    public Map<Integer, List<Integer>> getGraph() {
+        return graph;
+    }
+
+    public static void main(String[] args) {
+        var sampleGraph = new GraphNode(3, true);
+        // Adding edges
+        sampleGraph.addEdge(2, 3);
+        sampleGraph.addEdge(2, 5);
+        sampleGraph.addEdge(5, 3);
+
+        // Print the graph
+        sampleGraph.printGraph();
+    }
+
 }
