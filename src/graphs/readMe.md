@@ -76,8 +76,53 @@ OR Alternative Approach: Kahn’s Algorithm (Topological Sort)
 
 ---
 
-## 🚀 Summary
 - ✅ **Use BFS** for shortest paths, level-order traversal, and when the solution is closer to the root.
 - 🔵 **Use DFS** for deep searches, backtracking problems, cycle detection, and when handling large, sparse graphs efficiently.
 
 ---
+
+# Understanding Bipartite Graph 🧩
+
+A **Bipartite Graph** is a graph whose vertices can be divided into **two disjoint sets** such that:
+- Every edge connects a vertex from **one set to the other set**.
+- **No edge connects vertices within the same set**.
+- The graph is often represented as two sets:  
+  **Set A** and **Set B**.
+- Every edge in the graph connects one vertex from **Set A** to one vertex from **Set B**.
+
+---
+
+## How to Check if a Graph is Bipartite?
+- Use **graph coloring**:
+   - Assign colors (e.g., **Red** and **Blue**) to each node.
+   - Adjacent nodes must have **different colors**.
+- If any adjacent nodes have the **same color**, the graph is **not bipartite**.
+- A graph is bipartite if:
+  - It is 2-colorable. 
+  - Or, it contains no odd-length cycle.
+
+---
+
+## Common Applications:
+- **Matching problems** (e.g., Job assignments, Network flow).
+- **Scheduling problems**.
+- **Map coloring**.
+
+---
+
+## Example:
+
+A ---- B
+<br>
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;|
+<br>
+C ---- D
+
+
+- **Sets**: {A, C} and {B, D}
+- Every edge connects nodes from different sets → **Bipartite!**
+
+---
+
+> **Quick Tip**:  
+> *A graph with an **odd-length cycle** is never bipartite!* 🚀
