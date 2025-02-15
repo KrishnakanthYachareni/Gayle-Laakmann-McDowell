@@ -26,34 +26,34 @@ public class TopologicalSortWithDFS {
      * 4. After DFS completes for all nodes, print the stack contents as the topological order.
      * </p>
      */
-    public static void topologicalSort(Map<Integer, List<Integer>> graph, int V) {
-        boolean[] visited = new boolean[V];
-        Stack<Integer> stack = new Stack<>();
+        public static void topologicalSort(Map<Integer, List<Integer>> graph, int V) {
+            boolean[] visited = new boolean[V];
+            Stack<Integer> stack = new Stack<>();
 
-        for (int i = 0; i < V; i++) {
-            if (!visited[i]) {
-                dfs(graph, i, visited, stack);
+            for (int i = 0; i < V; i++) {
+                if (!visited[i]) {
+                    dfs(graph, i, visited, stack);
+                }
+            }
+
+            while (!stack.isEmpty()) {
+                System.out.print(stack.pop() + " ");
             }
         }
 
-        while (!stack.isEmpty()) {
-            System.out.print(stack.pop() + " ");
-        }
-    }
+        /**
+         * Helper method for DFS traversal to process nodes in topological order.
+         */
+        private static void dfs(Map<Integer, List<Integer>> graph, int node, boolean[] visited, Stack<Integer> stack) {
+            visited[node] = true;
 
-    /**
-     * Helper method for DFS traversal to process nodes in topological order.
-     */
-    private static void dfs(Map<Integer, List<Integer>> graph, int node, boolean[] visited, Stack<Integer> stack) {
-        visited[node] = true;
-
-        for (int nbr : graph.getOrDefault(node, List.of())) {
-            if (!visited[nbr]) {
-                dfs(graph, nbr, visited, stack);
+            for (int nbr : graph.getOrDefault(node, List.of())) {
+                if (!visited[nbr]) {
+                    dfs(graph, nbr, visited, stack);
+                }
             }
+            stack.push(node);
         }
-        stack.push(node);
-    }
 
     public static void main(String[] args) {
         int vertices = 6;
