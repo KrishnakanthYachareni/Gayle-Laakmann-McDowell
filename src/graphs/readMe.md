@@ -126,3 +126,30 @@ C ---- D
 
 > **Quick Tip**:  
 > *A graph with an **odd-length cycle** is never bipartite!* 🚀
+
+# **Topological Sorting - Summary** 🚀
+
+## **What is Topological Sorting?**
+Topological sorting is a **linear ordering of vertices** in a **Directed Acyclic Graph (DAG)**, such that for every directed edge **U → V**, vertex **U appears before V**.
+
+---
+
+## **Solution Approach**
+1. **Compute in-degree** (number of incoming edges) for each node.
+2. **Add all nodes with in-degree 0** to a queue.
+3. **Process nodes from the queue**:
+    - Print or store the node.
+    - Reduce the in-degree of its neighbors.
+    - If a neighbor's in-degree becomes 0, **add it to the queue**.
+4. **Repeat until the queue is empty**.
+
+---
+
+## **Applications of Topological Sorting**
+✅ **Task Scheduling** (e.g., Course prerequisites in universities).  
+✅ **Dependency Resolution** (e.g., Package installations, build systems).  
+✅ **Deadlock Detection** in operating systems.  
+✅ **Compiler Optimization** (ordering function calls).  
+✅ **Job Scheduling** in workflow systems.
+
+> **💡 Key Rule:** Topological sorting is **only possible in a Directed Acyclic Graph (DAG)**! 🚀
