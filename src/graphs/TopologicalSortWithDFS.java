@@ -1,5 +1,6 @@
 package graphs;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Stack;
@@ -7,7 +8,7 @@ import java.util.Stack;
 public class TopologicalSortWithDFS {
 
     /**
-     * Performs Topological Sorting using Kahn's Algorithm (BFS approach).
+     * Performs Topological Sorting using Kahn's Algorithm (DFS approach).
      *
      * <p><b>What is Topological Sorting?</b>
      * Topological Sorting is a linear ordering of vertices in a Directed Acyclic Graph (DAG),
@@ -66,6 +67,11 @@ public class TopologicalSortWithDFS {
         sampleGraph.addEdge(3, 5);
         sampleGraph.addEdge(2, 3);
 
-        topologicalSort(sampleGraph.getGraph(), vertices);
+//        topologicalSort(sampleGraph.getGraph(), vertices);
+
+        Map<String, String> map = new HashMap<>();
+        map.put("123", "432");
+        map.put("123", "431");
+        System.out.println(map);
     }
 }

@@ -4,8 +4,7 @@
 
 package common.algorithms.dynamic;
 
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 class Vertex {
     public char label;
@@ -102,8 +101,10 @@ public class BfsAlgorithm {
         graph.addEdge(4, 5);
         graph.addEdge(1, 4);
 
-        graph.displayMatrix();
+//        graph.displayMatrix();
 
-        graph.dfs();
+//        graph.dfs();
+
     }
+
 }
