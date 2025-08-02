@@ -1,0 +1,138 @@
+/*
+ * Click `Run` to execute the snippet below!
+ */
+
+import java.io.*;
+import java.util.*;
+
+/*
+ * To execute Java, please define "static void main" on a class
+ * named Solution.
+ *
+ * If you need more classes, simply define them inline.
+ */
+
+/* 
+
+In Java write a model to represent a deck of playing cards. A deck of cards contains 52 cards grouped into 4 suites (hearts, diamonds, spades and clubs) with values 2-10, Jack, Queen, King and Ace. 
+
+Add functions to create a (ordered) deck and shuffle the deck.
+
+*/
+
+/*/**
+ *  Deck: List<Suit> hearts, dima, spades
+ */
+
+
+class Card {
+  private final String suit; // hearts, diamonds, spades and clubs
+  private final String rank; // 2 - 10, Jack, Queen, King and Ace. 
+
+  public Card(String suit, String rank) {
+    this.suit = suit;
+    this.rank = rank;
+  }
+
+  @Override
+  public String toString() {
+    return "Suit: "+ suit + " Rank: "+ rank;
+  }
+ }
+
+ class Deck {
+    private List<Card> cards;
+    private String[] ranks = new String[] {"2", "3", "4", "5", "6", "7", "8", "9", "10", "Jack", "Queen","King", "Ace"};
+    private String[] suits = new String[] {"hearts", "diamonds", "spades", "clubs"};
+    private Random random;
+
+    public Deck() {
+      this.cards = new ArrayList<>();
+      createOrder();
+      this.random = new Random();
+    }
+
+    public void shuffle() {
+        for (int i = 0; i < cards.size(); i++) {
+            int index = random.nextInt(cards.size());
+            swap(index, i);
+        }
+    }
+
+    private void swap(int index, int i) {
+      // Swap the i and index
+      var temp = this.cards.get(index);
+      this.cards.set(index, this.cards.get(i));
+      this.cards.set(i, temp);
+    }
+
+    public void createOrder() {
+      for (String suit: this.suits) {
+          for (String rank: ranks) {
+              Card card = new Card(suit, rank);
+              this.cards.add(card);
+          }
+      }
+    }
+
+    public List<Card> getDeck() {
+      return this.cards;
+    }
+ }
+
+
+class Solution {
+  public static void main(String[] args) {
+    Deck deck = new Deck();
+
+    System.out.println("Initial Order");
+
+    // System.out.println(deck.getDeck());
+
+    deck.shuffle();
+    System.out.println("After Shuffle");
+    System.out.println(deck.getDeck());
+  }
+}
+===================
+
+Screening Round
+-----
+1. Stock purchase Leetcode 1, 2 and 3
+2. 
+
+Round2:
+--
+Longest common prefix
+Find Lowest Common ancestor when given two nodes on the multi level graph
+
+Round3:
+--
+Behavirol | Team Matching
+
+Round4:
+--
+URL Shortner + Resume with technical questions
+
+Round5:
+Behavioral | Team Matching
+
+Round6:
+Behavioral | Team Matching
+
+
+Teams
+------
+JMET -> https://www.linkedin.com/in/hongjenny/
+App Store and WeChat -> Alok Agarwal https://www.linkedin.com/in/alokkumaragarwal/
+Apple Care -> https://www.linkedin.com/in/arvinderkhosla/
+
+
+
+
+
+
+
+
+
+
